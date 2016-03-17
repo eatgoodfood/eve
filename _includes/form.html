@@ -1,37 +1,38 @@
 <div class="parties-wrapper small-12 medium-8 medium-offset-2 columns end">
-	<form id="parties-form" class="parties" accept-charset="UTF-8"  action="//formspree.io/parties@societyfair.net" method="POST">
-		<h1>Parties Inquiry Form</h1>
+	<form id="parties-form" class="parties" accept-charset="UTF-8"  action="//formspree.io/parties@restauranteve.com" method="POST">
+		<h1>Private Dining Inquiry Form</h1>
 
 		<input type="hidden" name="utf8" value="✓">
-		<input type="hidden" name="_subject" value="New party request!" />
+		<input type="hidden" name="_subject" value="New Private Dining Request!" />
 		<input type="text" name="_gotcha" class="gotcha"/>
-
-		<fieldset> <!-- start fieldset 0 -->
-	    	<legend>What type of event are you planning?</legend>
-		  	<input type="checkbox" name="type[]" value="Breakfast" id="typeBreakfast"><label for="typeBreakfast">Breakfast</label>
-		  	<input type="checkbox" name="type[]" value="Lunch" id="typeLunch"><label for="typeLunch">Lunch</label>
-		  	<input type="checkbox" name="type[]" value="Brunch" id="typeBrunch"><label for="typeBrunch">Brunch</label>
-		  	<input type="checkbox" name="type[]" value="Cocktail Party" id="typeCocktailParty"><label for="typeCocktailParty">Cocktail Party</label>
-		  	<input type="checkbox" name="type[]" value="Dinner" id="typeDinner"><label for="typeDinner">Dinner</label>
-		</fieldset> <!-- end fieldset 0 -->
 		
 		<fieldset> <!-- start fieldset 1 -->
-			<legend>Event details</legend>
+			<legend>Contact details</legend>
 			<div class="field"> <!-- set row -->
 				<div class="label-wrapper"> <!-- set columns -->
-					<label>Event name
-						<input type="text" name="event" placeholder="Jane's Baby Shower">
+					<label>Name
+						<input type="text" name="name" placeholder="John Smith" required>
 					</label>
 				</div>
 			</div>
 			<div class="field">
 			    <div class="label-wrapper">
-			     	<label>No. Guests
-						<input type="number" name="guests" placeholder="22" required pattern="number">
-						<span>Please enter number of guests expected.</span>
+			     	<label>Email
+						<input type="text" name="_replyto" placeholder="name@domain.com" required>
 					</label>
 				</div>
 			</div>
+			<div class="field">
+			    <div class="label-wrapper">
+			    	<label>Phone
+						<input type="text" name="phone" placeholder="XXX-XXX-XXXX">
+					</label>
+				</div>
+			</div>
+		</fieldset> <!-- end fieldset 1 -->
+
+		<fieldset> <!-- start fieldset 2 -->
+			<legend>Event details</legend>
 			<div class="field">
 			    <div class="label-wrapper">
 			     	<label>Date
@@ -53,28 +54,24 @@
 					</label>
 				</div>
 			</div>
-		</fieldset> <!-- end fieldset 1 -->
-
-		<fieldset> <!-- start fieldset 2 -->
-			<legend>Contact details</legend>
 			<div class="field">
 			    <div class="label-wrapper">
-			    	<label>Name
-		  				<input type="text" name="name" id="right-label" placeholder="John Doe">
-		  			</label>
-		  		</div>
-		  	</div>
-			<div class="field">
-			    <div class="label-wrapper">
-			    	<label>Email
-						<input type="email" name="_replyto" placeholder="Email address">
+			     	<label>Type of event
+						<input type="text" name="type" placeholder="Dinner" required>
 					</label>
 				</div>
 			</div>
 			<div class="field">
 			    <div class="label-wrapper">
-			    	<label>Phone
-						<input type="text" name="phone" placeholder="Phone">
+			     	<label>No.of guests
+						<input type="text" name="guests" placeholder="15" required>
+					</label>
+				</div>
+			</div>
+			<div class="field">
+			    <div class="label-wrapper">
+			     	<label>Additional information
+						<textarea type="text" name="additional" placeholder="None"></textarea>
 					</label>
 				</div>
 			</div>
