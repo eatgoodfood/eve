@@ -1,0 +1,79 @@
+//
+// Foundation-Jekyll - Custom Theme Styles
+//
+
+// Set styles for parties form
+
+@import url(https://fonts.googleapis.com/css?family=Alex+Brush);
+
+section.parties-form {
+
+	@include breakpoint(medium) {
+		background: #333;
+	}
+}
+
+form.parties {	
+	background: #fff;
+	padding: 1rem 1rem;
+	border-top: 4px solid #ad4daf;
+
+	@include breakpoint(medium) {
+		padding: 1rem 2rem;
+		margin: 0 0 2rem 0;
+	}
+
+	h1 {
+		margin: 2rem 0 2rem 0;
+		text-align: left;
+
+		@include breakpoint(medium) {
+			margin: 1rem 0 2rem 0;
+			text-align: center;
+			font-family: 'Alex Brush', cursive;
+		}
+	}
+
+	.gotcha {
+		display: none;
+	}
+	
+	fieldset {
+		@extend .fieldset;
+
+		@include breakpoint(medium) {
+			border: 3px solid #efefef;
+		}
+
+		legend {
+
+			@include breakpoint(medium) {
+				font-weight: bold;
+			}
+		}
+
+		.field {
+			@include grid-row;
+
+			.label-wrapper {
+				@include grid-column(12);
+
+				span {
+					@include form-error;
+				}
+			}
+			.input-wrapper {
+				@include grid-column(9);
+			}
+		}
+	}
+
+	.submit-wrapper {
+		@extend .text-center;
+
+		button {
+			@extend .button;
+		}
+	}
+
+}

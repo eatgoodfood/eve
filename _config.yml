@@ -1,0 +1,49 @@
+title:              Restaurant Eve
+
+# Versioning
+current_version: 1.5.0
+foundation_version: 6.0.0
+
+author:
+  name:             Stephen Chapman
+  email:            stephen@restauranteve.com
+  github:           stephenchapman
+  twitter:          stephenchapman
+
+# Dependencies
+markdown:           kramdown
+#Syntax Highlighter
+#highlighter:        pygments
+
+# Permalinks
+permalink:          pretty
+
+port:               9002
+baseurl:            ""
+url:                http://parties.restauranteve.com
+
+# exclude this stuff when building the static site
+exclude:            [
+                      '.gitignore',
+                      'README.md',
+                      'Gemfile',
+                      'Gemfile.lock',
+                    ]
+
+## CUSTOM VARS
+
+#ga_id:             ##-########-###
+site_name:          Restaurant Eve
+site_description :  Nourish the Palate
+site_copyright:     Copyright (c) 2016 @stephenchapman
+site_url:           http://parties.restauranteve.com
+site_email:         webmaster@eatgoodfoodgroup.com
+site_phone:
+
+
+
+# Assets
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          ./assets/stylesheets
+  style:            :compressed
